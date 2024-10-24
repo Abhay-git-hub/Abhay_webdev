@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>login form</title>
+</head>
+<style>
+    body {
+        margin: 0;
+        padding: 0;
+        font-family: Arial, sans-serif;
+        background: url('bg.jpg') no-repeat center center fixed;
+        background-size: cover;
+        display: flex;
+        flex-direction: column;
+        height: 90vh;
+    }
+
+    .header {
+        background-color: grey;
+        color: rgb(0, 0, 0);
+        padding: 0%;
+        text-align: center;
+
+    }
+
+    .header h1 {
+        size: 40%;
+        margin: 0%;
+    }
+
+    .logo {
+        width: 100px;
+        height: auto;
+    }
+
+
+    .logo-container {
+        display: flex;
+        align-items: left;
+        position: absolute;
+        top: 10px;
+        left: 10px;
+    }
+
+
+    .text {
+        flex-grow: 1;
+        text-align: center;
+        font-size: 1.5em;
+        color: #333;/
+    }
+
+    nav {
+        display: flex;
+        justify-content: center;
+        background-color: #444;
+        padding: 10px;
+
+    }
+
+    nav a {
+        color: white;
+        padding: 14px 20px;
+        text-decoration: none;
+        text-transform: uppercase;
+    }
+
+    .main {
+        display: flex;
+        flex: 1;
+        padding: 20px;
+        margin-top: 60px;
+    }
+
+    .left-side {
+        flex: 1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .right-side {
+        flex: 2;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 1px;
+    }
+
+    .login-form {
+        width: 30%;
+        padding: 20px;
+        box-sizing: border-box;
+        background-color: rgba(255, 255, 255, 0.5);
+        border-radius: 8px;
+        box-shadow: 0 0 8px black;
+    }
+
+    input[type="submit"] {
+        background-color: #007bff;
+        padding: 10px 30px;
+        border-radius: 4px;
+        margin: 50px;
+    }
+</style>
+<div class="header">
+    <div class="logo-container">
+        <a href="#index" class="logo-link">
+            <img src="logo.png" alt="Logo" class="logo">
+        </a>
+    </div>
+    <div class="text">
+        <h1>Welcome to Abhay's Page</h1>
+    </div>
+</div>
+<nav>
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#blog">Blog</a>
+    <a href="#contact">Contact</a>
+</nav>
+<div class="main">
+    <div class="left-side">
+        hello
+    </div>
+    <div class="right-side">
+        <div class="login-form">
+            <h1 align="center">Bio Data</h1>
+            <form action="D:\codes\html\Untitled-1.html" method="get">
+                <table border="2%">
+                    <tr>
+                        <td bgcolor="lightpink">First Name</td>
+                        <td><input type="text"></td>
+                    </tr>
+                    <tr>
+                        <td bgcolor="lightpink">Middle Name</td>
+                        <td><input type="text"></td>
+                    </tr>
+                    <tr>
+                        <td bgcolor="lightpink">Last Name</td>
+                        <td><input type="text"></td>
+                    </tr>
+                    <tr>
+                        <td bgcolor="lightpink">address</td>
+                        <td><input type="text"></td>
+                    </tr>
+                    <tr>
+                        <td bgcolor="lightpink">age</td>
+                        <td><input type="number"></td>
+                    </tr>
+                    <tr>
+                        <td bgcolor="lightpink">Date of Birth</td>
+                        <td><input type="date"></td>
+                    </tr>
+                    <tr>
+                        <td bgcolor="lightpink">current time</td>
+                        <td><input type="time"></td>
+                    </tr>
+                    <tr>
+                        <td bgcolor="lightpink">phone number</td>
+                        <td><input type="text"></td>
+                    </tr>
+                    <tr>
+                        <td bgcolor="lightpink">Email</td>
+                        <td><input type="Email"></td>
+                    </tr>
+                    <tr>
+                        <td bgcolor="lightpink">password</td>
+                        <td><input type="password"></td>
+                    </tr>
+                </table>
+                <input type="submit" value="Submit">
+            </form>
+        </div>
+    </div>
+</div>
+</body>
+
+</html>

@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Form</title>
+    <style>
+        /* Basic reset and background setup */
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background: url('bg1.png') no-repeat center center fixed; /* Set background image */
+            background-size: cover;
+            display: flex;
+            flex-direction: column; /* Stack header, navigation, and content vertically */
+            height: 100vh; /* Full viewport height */
+        }
+
+        /* Header styling */
+        .header {
+            background-color: grey;
+            color: black;
+            padding: 10px;
+            text-align: center;
+            position: relative; /* Position relative to contain absolute elements */
+            z-index: 1000; /* Ensure the header is above the background image */
+        }
+
+        .logo {
+            width: 100px;
+            height: auto;
+            position: absolute;
+            top: 10px;
+            left: 10px;
+        }
+
+        .header h1 {
+            margin: 0;
+            font-size: 1.5em;
+        }
+
+        /* Navigation styling */
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #444;
+            padding: 10px;
+            z-index: 1000; /* Ensure navigation is above the background image */
+        }
+
+        nav a {
+            color: white;
+            padding: 14px 20px;
+            text-decoration: none;
+            text-transform: uppercase;
+        }
+
+        /* Main content area styling */
+        .main-content {
+            display: flex;
+            flex: 1;
+            padding: 20px;
+            margin-top: 60px; /* Adjust based on header height */
+        }
+
+        /* Left section styling */
+        .left-side {
+            flex: 1; /* Take up remaining space on the left */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            /* Additional styles can be added here */
+        }
+
+        /* Right section styling */
+        .right-side {
+            flex: 1; /* Take up the right half of the page */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+
+        /* Login form styling */
+        .login-form {
+            width: 100%; /* Full width within the right-side */
+            max-width: 400px;
+            background-color: rgba(255, 255, 255, 0.1); /* Semi-transparent background */
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for form */
+            display: flex;
+            flex-direction: column; /* Align form elements vertically */
+            align-items: center; /* Center align items horizontally */
+            padding: 20px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 10px;
+            width: 100%; /* Ensure labels take full width */
+            text-align: left; /* Align text to the left */
+        }
+
+        input[type="email"], input[type="password"] {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 10px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+
+        /* Submit button styling */
+        input[type="submit"] {
+            background-color: #007bff; /* Blue background */
+            color: white;
+            border: none;
+            padding: 10px 15px; /* Adjust padding for size */
+            cursor: pointer;
+            border-radius: 4px; /* Rounded corners */
+            font-size: 1em; /* Font size */
+            transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+            margin-top: 10px; /* Space above the button */
+        }
+
+        /* Submit button hover effect */
+        input[type="submit"]:hover {
+            background-color: #0056b3; /* Darker blue on hover */
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <!-- Logo positioned absolutely -->
+        <img src="logo.png" alt="Logo" class="logo">
+        <h1>Welcome to Abhay's Page</h1>
+    </div>
+    <nav>
+        <!-- Navigation links -->
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#blog">Blog</a>
+        <a href="#contact">Contact</a>
+    </nav>
+    <div class="main-content">
+        <!-- Left side for additional content -->
+        <div class="left-side">
+            <!-- Additional content can be placed here -->
+        </div>
+        <!-- Right side for login form -->
+        <div class="right-side">
+            <div class="login-form">
+                <form action="welcome.html" method="get">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                    
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password" required>
+                    
+                    <input type="submit" value="Submit">
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
